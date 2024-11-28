@@ -1,0 +1,33 @@
+{
+  "header": {
+    "search": "Search",
+    "settings": "Settings",
+    "help": "Help",
+    "external": "External Link",
+    "connect": "Connect"
+  },
+  "filters": {
+    "top": "Top",
+    "dca": "DCA",
+    "pro": "Pro",
+    "pump": "Pump",
+    "migrated": "Migrated",
+    "liquidity": "Liquidity ≥",
+    "holders": "Holders ≥",
+    "filter": "Filter",
+    "quickBuy": "Quick Buy"
+  },
+  "tokenList": {
+    "token": "Token",
+    "liquidity": "Liq. $/MC",
+    "holders": "Holders $/BC",
+    "change": {
+      "1m": "1m%",
+      "5m": "5m%",
+      "11h": "11h%"
+    },
+    "age": "Age",
+    "price": "Price",
+    "buy": "Buy"
+  }
+}

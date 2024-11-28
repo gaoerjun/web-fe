@@ -1,0 +1,73 @@
+@import 'md-colors';
+@import 'mixins';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-outline;
+  }
+  
+  body {
+    @apply bg-background text-on-background;
+  }
+}
+
+.header {
+  @apply bg-surface border-b border-outline-variant;
+  
+  &__container {
+    @include container;
+    @include flex-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  &__left {
+    @include flex-start;
+    gap: 1rem;
+  }
+  
+  &__right {
+    @include flex-start;
+    gap: 1rem;
+  }
+  
+  &__logo {
+    @include flex-start;
+    gap: 0.5rem;
+    
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+    
+    span {
+      @apply font-bold text-lg text-on-surface;
+    }
+  }
+  
+  &__scope {
+    @apply bg-surface-variant rounded-lg px-3 py-1;
+    
+    span {
+      @apply text-on-surface-variant;
+    }
+  }
+}
+
+.token-list {
+  &__header {
+    @include flex-start;
+    @apply px-4 py-2 text-gray-400 text-sm;
+    gap: 1rem;
+  }
+  
+  &__row {
+    @include flex-start;
+    @apply px-4 py-3 hover:bg-surface rounded-lg;
+    gap: 1rem;
+  }
+}

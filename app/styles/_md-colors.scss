@@ -1,0 +1,266 @@
+// Material Design 3.0 Color System
+
+// Core color tokens
+$md-source: (
+  seed: #6750A4,
+  custom: (
+    primary: #6750A4,
+    secondary: #625B71,
+    tertiary: #7D5260,
+    neutral: #939094,
+    neutral-variant: #938F99
+  )
+);
+
+// Light theme color scheme
+:root {
+  // Primary
+  --md-sys-color-primary: #{map-get($md-source, seed)};
+  --md-sys-color-on-primary: #FFFFFF;
+  --md-sys-color-primary-container: #EADDFF;
+  --md-sys-color-on-primary-container: #21005D;
+  --md-sys-color-primary-fixed: #EADDFF;
+  --md-sys-color-on-primary-fixed: #21005D;
+  --md-sys-color-primary-fixed-dim: #D0BCFF;
+  --md-sys-color-on-primary-fixed-variant: #4F378B;
+
+  // Secondary
+  --md-sys-color-secondary: #625B71;
+  --md-sys-color-on-secondary: #FFFFFF;
+  --md-sys-color-secondary-container: #E8DEF8;
+  --md-sys-color-on-secondary-container: #1D192B;
+  --md-sys-color-secondary-fixed: #E8DEF8;
+  --md-sys-color-on-secondary-fixed: #1D192B;
+  --md-sys-color-secondary-fixed-dim: #CCC2DC;
+  --md-sys-color-on-secondary-fixed-variant: #4A4458;
+
+  // Tertiary
+  --md-sys-color-tertiary: #7D5260;
+  --md-sys-color-on-tertiary: #FFFFFF;
+  --md-sys-color-tertiary-container: #FFD8E4;
+  --md-sys-color-on-tertiary-container: #31111D;
+  --md-sys-color-tertiary-fixed: #FFD8E4;
+  --md-sys-color-on-tertiary-fixed: #31111D;
+  --md-sys-color-tertiary-fixed-dim: #EFB8C8;
+  --md-sys-color-on-tertiary-fixed-variant: #633B48;
+
+  // Error
+  --md-sys-color-error: #B3261E;
+  --md-sys-color-on-error: #FFFFFF;
+  --md-sys-color-error-container: #F9DEDC;
+  --md-sys-color-on-error-container: #410E0B;
+
+  // Background
+  --md-sys-color-background: #FFFBFE;
+  --md-sys-color-on-background: #1C1B1F;
+
+  // Surface
+  --md-sys-color-surface: #FFFBFE;
+  --md-sys-color-on-surface: #1C1B1F;
+  --md-sys-color-surface-variant: #E7E0EC;
+  --md-sys-color-on-surface-variant: #49454F;
+  --md-sys-color-surface-container-lowest: #FFFFFF;
+  --md-sys-color-surface-container-low: #F7F2FA;
+  --md-sys-color-surface-container: #F3EDF7;
+  --md-sys-color-surface-container-high: #ECE6F0;
+  --md-sys-color-surface-container-highest: #E6E0E9;
+  --md-sys-color-surface-dim: #DED8E1;
+  --md-sys-color-surface-bright: #FEF7FF;
+
+  // Outline
+  --md-sys-color-outline: #79747E;
+  --md-sys-color-outline-variant: #C4C7C5;
+
+  // Inverse
+  --md-sys-color-inverse-surface: #313033;
+  --md-sys-color-inverse-on-surface: #F4EFF4;
+  --md-sys-color-inverse-primary: #D0BCFF;
+
+  // Surface Tint
+  --md-sys-color-surface-tint: #6750A4;
+  --md-sys-color-surface-tint-color: #6750A4;
+
+  // Scrim
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-shadow: #000000;
+}
+
+// Dark theme color scheme
+.dark {
+  // Primary
+  --md-sys-color-primary: #D0BCFF;
+  --md-sys-color-on-primary: #371E73;
+  --md-sys-color-primary-container: #4F378B;
+  --md-sys-color-on-primary-container: #EADDFF;
+  --md-sys-color-primary-fixed: #EADDFF;
+  --md-sys-color-on-primary-fixed: #21005D;
+  --md-sys-color-primary-fixed-dim: #D0BCFF;
+  --md-sys-color-on-primary-fixed-variant: #4F378B;
+
+  // Secondary
+  --md-sys-color-secondary: #CCC2DC;
+  --md-sys-color-on-secondary: #332D41;
+  --md-sys-color-secondary-container: #4A4458;
+  --md-sys-color-on-secondary-container: #E8DEF8;
+  --md-sys-color-secondary-fixed: #E8DEF8;
+  --md-sys-color-on-secondary-fixed: #1D192B;
+  --md-sys-color-secondary-fixed-dim: #CCC2DC;
+  --md-sys-color-on-secondary-fixed-variant: #4A4458;
+
+  // Tertiary
+  --md-sys-color-tertiary: #EFB8C8;
+  --md-sys-color-on-tertiary: #492532;
+  --md-sys-color-tertiary-container: #633B48;
+  --md-sys-color-on-tertiary-container: #FFD8E4;
+  --md-sys-color-tertiary-fixed: #FFD8E4;
+  --md-sys-color-on-tertiary-fixed: #31111D;
+  --md-sys-color-tertiary-fixed-dim: #EFB8C8;
+  --md-sys-color-on-tertiary-fixed-variant: #633B48;
+
+  // Error
+  --md-sys-color-error: #F2B8B5;
+  --md-sys-color-on-error: #601410;
+  --md-sys-color-error-container: #8C1D18;
+  --md-sys-color-on-error-container: #F9DEDC;
+
+  // Background
+  --md-sys-color-background: #1C1B1F;
+  --md-sys-color-on-background: #E6E1E5;
+
+  // Surface
+  --md-sys-color-surface: #1C1B1F;
+  --md-sys-color-on-surface: #E6E1E5;
+  --md-sys-color-surface-variant: #49454F;
+  --md-sys-color-on-surface-variant: #CAC4D0;
+  --md-sys-color-surface-container-lowest: #0F0D13;
+  --md-sys-color-surface-container-low: #1D1B20;
+  --md-sys-color-surface-container: #211F26;
+  --md-sys-color-surface-container-high: #2B2930;
+  --md-sys-color-surface-container-highest: #36343B;
+  --md-sys-color-surface-dim: #141218;
+  --md-sys-color-surface-bright: #3B383E;
+
+  // Outline
+  --md-sys-color-outline: #938F99;
+  --md-sys-color-outline-variant: #444746;
+
+  // Inverse
+  --md-sys-color-inverse-surface: #E6E1E5;
+  --md-sys-color-inverse-on-surface: #313033;
+  --md-sys-color-inverse-primary: #6750A4;
+
+  // Surface Tint
+  --md-sys-color-surface-tint: #D0BCFF;
+  --md-sys-color-surface-tint-color: #D0BCFF;
+
+  // Scrim
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-shadow: #000000;
+}
+
+// State Layers
+$state-layers: (
+  hover: 0.08,
+  focus: 0.12,
+  pressed: 0.12,
+  dragged: 0.16,
+  disabled: 0.12
+);
+
+// Elevation Levels
+$elevation-level: (
+  0: none,
+  1: 0px 1px 2px rgba(0, 0, 0, 0.3),
+  2: 0px 1px 2px rgba(0, 0, 0, 0.3),
+  3: 0px 4px 8px rgba(0, 0, 0, 0.3),
+  4: 0px 6px 10px rgba(0, 0, 0, 0.3),
+  5: 0px 8px 12px rgba(0, 0, 0, 0.3)
+);
+
+// Typography Scale
+$typography-scale: (
+  display-large: (
+    font-family: 'Roboto',
+    font-weight: 400,
+    font-size: 57px,
+    line-height: 64px,
+    letter-spacing: -0.25px
+  ),
+  display-medium: (
+    font-family: 'Roboto',
+    font-weight: 400,
+    font-size: 45px,
+    line-height: 52px,
+    letter-spacing: 0px
+  ),
+  display-small: (
+    font-family: 'Roboto',
+    font-weight: 400,
+    font-size: 36px,
+    line-height: 44px,
+    letter-spacing: 0px
+  ),
+  headline-large: (
+    font-family: 'Roboto',
+    font-weight: 400,
+    font-size: 32px,
+    line-height: 40px,
+    letter-spacing: 0px
+  ),
+  headline-medium: (
+    font-family: 'Roboto',
+    font-weight: 400,
+    font-size: 28px,
+    line-height: 36px,
+    letter-spacing: 0px
+  ),
+  headline-small: (
+    font-family: 'Roboto',
+    font-weight: 400,
+    font-size: 24px,
+    line-height: 32px,
+    letter-spacing: 0px
+  ),
+  body-large: (
+    font-family: 'Roboto',
+    font-weight: 400,
+    font-size: 16px,
+    line-height: 24px,
+    letter-spacing: 0.5px
+  ),
+  body-medium: (
+    font-family: 'Roboto',
+    font-weight: 400,
+    font-size: 14px,
+    line-height: 20px,
+    letter-spacing: 0.25px
+  ),
+  body-small: (
+    font-family: 'Roboto',
+    font-weight: 400,
+    font-size: 12px,
+    line-height: 16px,
+    letter-spacing: 0.4px
+  ),
+  label-large: (
+    font-family: 'Roboto',
+    font-weight: 500,
+    font-size: 14px,
+    line-height: 20px,
+    letter-spacing: 0.1px
+  ),
+  label-medium: (
+    font-family: 'Roboto',
+    font-weight: 500,
+    font-size: 12px,
+    line-height: 16px,
+    letter-spacing: 0.5px
+  ),
+  label-small: (
+    font-family: 'Roboto',
+    font-weight: 500,
+    font-size: 11px,
+    line-height: 16px,
+    letter-spacing: 0.5px
+  )
+);

@@ -1,0 +1,33 @@
+{
+  "header": {
+    "search": "搜索",
+    "settings": "设置",
+    "help": "帮助",
+    "external": "外部链接",
+    "connect": "连接"
+  },
+  "filters": {
+    "top": "热门",
+    "dca": "定投",
+    "pro": "专业",
+    "pump": "上涨",
+    "migrated": "已迁移",
+    "liquidity": "流动性 ≥",
+    "holders": "持有者 ≥",
+    "filter": "筛选",
+    "quickBuy": "快速买入"
+  },
+  "tokenList": {
+    "token": "代币",
+    "liquidity": "流动性/市值",
+    "holders": "持有者/区块",
+    "change": {
+      "1m": "1分钟%",
+      "5m": "5分钟%",
+      "11h": "11小时%"
+    },
+    "age": "时间",
+    "price": "价格",
+    "buy": "购买"
+  }
+}
